@@ -1,0 +1,13 @@
+@icons-sprite: url();
+@icons-sprite-2x: url();
+
+.icon {
+  background-image: @icons-sprite;
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), (min-resolution: 144dpi) {
+  .icon {
+    background-image: @icons-sprite-2x;
+  }
+}
